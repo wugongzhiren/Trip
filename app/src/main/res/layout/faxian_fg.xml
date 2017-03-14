@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <fragment
+        android:id="@+id/fragment_cycle_viewpager_content"
+        android:name="com.wufang.trip.view.CycleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+    <LinearLayout
+        android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="20dp">
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#eeeeee"
+            android:text="- 猜你喜欢 -"/>
+    </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</LinearLayout>
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</ScrollView>
