@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+
+    <EditText
+        android:layout_marginTop="90dp"
+        android:id="@+id/name"
+        android:hint="请输入用户名"
+        android:textCursorDrawable="@drawable/cusor_style"
+        android:textColorHint="#FFD2D2D2"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="36dp"
+        android:background="@drawable/edittextselector"
+        />
+    <EditText
+        android:layout_below="@+id/name"
+        android:textColorHint="#FFD2D2D2"
+        android:paddingLeft="10dp"
+        android:textCursorDrawable="@drawable/cusor_style"
+        android:id="@+id/password"
+        android:hint="请输入密码"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittextselector"
+        android:layout_height="36dp"
+        android:inputType="textPassword"/>
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_below="@+id/password"
+        android:id="@+id/login_bt"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btselector"
+        android:text="登录"
+        android:textSize="18sp"
+        android:textColor="#fff"/>
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_below="@+id/login_bt"
+        android:id="@+id/backtoreg"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btselector"
+        android:text="没有账号？点击注册"
+        android:textSize="18sp"
+        android:textColor="#fff"/>
+
+
+    <ProgressBar
+
+        android:id="@+id/reg_progress"
+        android:visibility="gone"
+        android:elevation="2dp"
+        android:translationZ="2dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

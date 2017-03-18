@@ -1,120 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<ScrollView
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="380dp">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp">
-<TextView
-    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:text="热门景点推荐"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="更多"/>
-            </RelativeLayout>
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp">
-                <com.facebook.drawee.view.SimpleDraweeView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-                <TextView
-                    android:background="#04f9f1f1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="景点1"/>
-            </FrameLayout>
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp">
-                <com.facebook.drawee.view.SimpleDraweeView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-                <TextView
-                    android:background="#04f9f1f1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="景点2"/>
-            </FrameLayout>
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp">
-                <com.facebook.drawee.view.SimpleDraweeView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-                <TextView
-                    android:background="#04f9f1f1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="景点3"/>
-            </FrameLayout>
-        </LinearLayout>
+    android:orientation="vertical"
+    android:id="@+id/refresh">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="300dp">
-            <RelativeLayout
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="天柱山旅游攻略"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="更多"/>
-            </RelativeLayout>
-            <RelativeLayout
+                android:layout_height="380dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="热门景点推荐" />
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="更多" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#04f9f1f1"
+                        android:text="景点1" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+
+                        android:id="@+id/img2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#04f9f1f1"
+                        android:text="景点2" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/img3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#04f9f1f1"
+                        android:text="景点3" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="旅游攻略1"/>
-                <com.facebook.drawee.view.SimpleDraweeView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="旅游攻略2"/>
-                <com.facebook.drawee.view.SimpleDraweeView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="旅游攻略3"/>
-                <com.facebook.drawee.view.SimpleDraweeView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    />
-            </RelativeLayout>
+                android:layout_height="300dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="天柱山旅游攻略" />
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="更多" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:textSize="20sp"
+                        android:lines="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:text="旅游攻略1" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/img4"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:textSize="20sp"
+                        android:lines="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="旅游攻略2" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/img5"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:textSize="20sp"
+                        android:lines="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="旅游攻略3" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/img6"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+                </RelativeLayout>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-</ScrollView>
+    </ScrollView>
 </android.support.v4.widget.SwipeRefreshLayout>

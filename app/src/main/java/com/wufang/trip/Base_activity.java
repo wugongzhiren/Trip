@@ -8,7 +8,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.constant.Constant;
+
+import com.wufang.trip.tool.ToStringConverterFactory;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -65,6 +66,7 @@ public class Base_activity extends AppCompatActivity implements View.OnClickList
 
     public Retrofit getRetrofit(){
         Retrofit retrofit = new Retrofit.Builder()
+                .addConverterFactory(new ToStringConverterFactory())
                 .addConverterFactory(GsonConverterFactory.create())//解析方法
                 //这里建议：- Base URL: 总是以/结尾；- @Url: 不要以/开头
                 .baseUrl(Constant.BASEURL)
